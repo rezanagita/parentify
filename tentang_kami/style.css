@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    margin: 5em 0 2em;
+  }
+  
+img#LogoParentify {
+      height: 50px;
+  }
+
+ /* ! Navbar */
+#navbarNav ul {
+    gap: 1rem;
+}
+
+ /* ! section 1 */
+.row{
+    background-size: 190%;
+    background-repeat: no-repeat;
+    padding-top: 8%;
+    
+    }
+#h1about {
+        text-align: center;
+        font-weight: bold;
+        color: rgb(33, 33, 190);
+    }
+
+#ptitle,h4{
+    text-align: center;
+    color: rgb(243, 9, 9);
+    font-size: 1em;
+    font-weight: 800;
+}
+
+
+ /* ! section 2 */
+/*  line */
+#line {
+    margin: auto;
+    border: 0.10em solid grey;
+    opacity: 10%;
+  }
+
+.btn{
+  max-width: 100px;
+  width: 100%;
+}
+
+/* styles.css */
+
+.btn-custom-width {
+  max-width: 100px; /* Sesuaikan dengan lebar yang diinginkan */
+  width: 100%; /* Untuk memastikan tombol mengisi lebar maksimum */
+}
+
+.row{
+    padding: 25px;
+}
+  
+  /*  footer */
+  .footer {
+    background-color: #f8f9fa;
+    border-radius: 5px;;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  #footer-brand {
+    width: 60%;
+  }
+  
+  #copyright {
+    color: #B1B6B8;
+  }
+
+h5{
+    color: black;
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PARENTIFY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+  <body>
+ <!--NAVBAR-->
+    <header>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg fixed-top">
+       <div class="container">
+         <a class="navbar-brand" href="#">
+           <img src="ParentifyLogo.png" alt="LogoParentify" width="150" height="65">
+         </a>
+         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+     <!--Memindahkan navbar ke kanan-->
+         <div class="navbar-collapse collapse show text-right "id="navbarNav">
+           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+             <!--Fiturnya-->
+             <li class="nav-item">
+               <a class="nav-link" aria-current="page" href="/tampilan/index.html">Beranda</a>
+             </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#pilihan" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Parenting
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/parenting1/index.html"> Calon Orang Tua</a></li>
+                <li><a class="dropdown-item" href="/parenting2/index.html">Orang Tua</a></li>
+              </ul>
+            </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/toko/index.html">Toko</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="/tampilan/index.html">Tentang Kami</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+    </header>
+<!--Toko-->
+
+    <!-- Product Section -->
+    <main id="mainContent">
+        <div class="container mt-5">
+            <div class="row">
+
+                <!-- Dot Product -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="G1.jpg" class="card-img-top" alt="Dot Produk">
+                        <div class="card-body">
+                            <h5 class="card-title">Dot</h5>
+                            <p class="card-text">Dot yang nyaman untuk bayi anda.</p>
+                            <p class="card-text">Rp 250.000.00</p>
+                            <a href="#" class="btn btn-primary add-to-cart" data-product="Dot">Tambahkan ke Keranjang</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stroller Product -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="G2.jpg" class="card-img-top" alt="Stroller Produk">
+                        <div class="card-body">
+                            <h5 class="card-title">Stroller</h5>
+                            <p class="card-text">Stroller yang nyaman untuk orang tua saat berpergian.</p>
+                            <p class="card-text">Rp 1.500.000.00</p>
+                            <a href="#" class="btn btn-primary add-to-cart" data-product="Stroller">Tambahkan ke Keranjang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Baby Clothes Product -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img src="G3.jpg" class="card-img-top" alt="Baju  bayi produk">
+                    <div class="card-body">
+                        <h5 class="card-title">Baju Bayi</h5>
+                        <p class="card-text">Baju yang menggemaskan untuk bayi anda.</p>
+                        <p class="card-text">Rp 175.000.00</p>
+                        <a href="#" class="btn btn-primary add-to-cart" data-product="Baby Clothes">Tambahkan ke Keranjang</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Checkout Section -->
+    <div class="container mt-4">
+        <h2>Checkout</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <form>
+                    <!-- Customer Information Form -->
+                    <h4>Informasi Pelanggan</h4>
+                    <!-- Include relevant form fields for customer information -->
+
+                    <hr class="my-4">
+
+                    <!-- Payment Information Form -->
+                    <h4>Informasi Pembayaran</h4>
+                    <!-- Include relevant form fields for payment information -->
+
+                    <button type="submit" class="btn btn-primary">Tempat Memesan</button>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <!-- Order Summary -->
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-muted">Keranjang Anda</span>
+                    <span class="badge badge-secondary badge-pill cart-count">0</span>
+                </h4>
+                <ul class="list-group mb-3" id="cart-items">
+                    <!-- List of selected products and quantities will be displayed here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+   
+<!--Footer-->
+    <footer>
+        <foot-bar>
+          <footer class="footer">
+            <div class="row mx-0">
+              <!--Column 1-->
+              <div class="col-md-3 m-md-auto px-0" id="column1">
+                <img src="ParentifyLogo.png" alt="Logo" class="img-fluid mb-2" id="footer-brand">
+                <p>
+                  Bersama-sama mengubah 
+                  <br>
+                  pola asuh yang lebih baik
+                </p>
+              </div>
+              <!--Column 2-->
+              <div class="col-md-3 px-0" id="column2">
+                <h5>Fitur</h5>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#/pilihan" id="parenting" class="link-opacity-25-hover">Parenting</a>
+                  </li>
+                  <li>
+                    <a href="#/edukasi" id="edukasi" class="link-opacity-25-hover">Edukasi</a>
+                  </li>
+                  <li>
+                    <a href="#/toko" id="toko" class="link-opacity-25-hover">Toko</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Column 3-->
+              <div class="col-md-3 px-0" id="column3">
+                <h5>Hubungi Kami</h5>
+                <ul class="list-unstyled">
+                  <li><a class="link-opacity-25-hover" href="#">parentify12@gmail.com</a></li>
+                  <li><a class="link-opacity-25-hover" href="#">Parentify,Indonesia</a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="mb-0 mt-4" id="copyright">Copyright 2023 • All rights reserved • Parentify</p>
+          </footer>
+        </foot-bar>
+      </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <!-- Custom JavaScript -->
+        <script>
+            $(document).ready(function () {
+                var cart = [];
+
+                // Add to Cart button click event
+                $(".add-to-cart").click(function () {
+                    var productName = $(this).data("product");
+                    cart.push(productName);
+
+                    // Update cart count
+                    $(".cart-count").text(cart.length);
+
+                    // Update cart items list
+                    updateCartItems();
+                });
+
+                // Function to update cart items list
+                function updateCartItems() {
+                    var cartItemsList = $("#cart-items");
+                    cartItemsList.empty();
+
+                    $.each(cart, function (index, item) {
+                        cartItemsList.append("<li class='list-group-item'>" + item + "</li>");
+                    });
+                }
+            });
+        </script>
+</body>
+</html>

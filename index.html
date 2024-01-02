@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PARENTIFY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+<!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./tampilan/ParentifyLogo.png" alt="LogoParentify" width="150" height="65">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+    <!--Memindahkan navbar ke kanan-->
+        <div class="navbar-collapse collapse show text-right "id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!--Fiturnya-->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#pilihan" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Parenting
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/parenting1/index.html""> Calon Orang Tua</a></li>
+                <li><a class="dropdown-item" href="/parenting2/index.html">Orang Tua</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/toko/index.html">Toko</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tentang_kami/index.html">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </header>
+   <main id="mainContent">
+     <!--Hero Section 1-->
+   <div class="bg" id="beranda">
+    <section class="hero-section d-flex align-items-center" id="section1">
+      <div class="container">
+        <div class="row mx-lg-auto mt-lg-5" id="hero-content">
+          <div class="col-md-6 order-md-3 d-flex align-items-center m-auto mb-5 m-4 mx-md-auto">
+            <img src="section1.png" alt="Hero Image 1" class="img-fluid float-end mt-lg-5" id="hero-img">
+          </div>
+      <!--Text Demo-->
+          <div class="col-md-6 col-lg-6 order-md-1">
+            <h1 id="Hero-welcome">Hallo, Orang Tua Hebat!</h1>
+            <h2 id="hero-writer">
+              Aku Akan Menjadi Teman Perjalanan Parentingmu!
+            </h2>
+            <p id="hero-desc">
+              Saatnya bersama-sama mewujudkan generasi
+              <br>
+              penerus bangsa yang berkualitas dan berkarakter.
+              <br>
+              Orang Tua adalah role model yang akan
+              <br>
+              memberikan perubahan besar untuk generasimu!
+            </p>
+            <!--Tombol ke section 2-->
+            <button type="button" class="btn btn-primary rounded-pill" id="btnmain">Jelajahi Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </section>
+   </div>
+  
+  <!--Hero Section 2-->
+   <section class="hero-section" id="section2">
+    <div class="container" id="parenting">
+      <div class="row mx-lg-auto mt-lg-5" id="hero-content">
+        <div class="col-md-6 order-md-1 d-flex align-items-center ml-auto mb-3 mx-md-auto">
+          <img src="section2.png" alt="Hero Image 2" class="img-fluid" id="hero-img">
+        </div>
+        <div class="col-md-6 order-md-2 m-md-auto">
+          <h1 id="hero-title">
+              Mulai Perjalananmu Dari Sini
+          </h1>
+          <p id="hero-desc">
+            Setiap momen adalah petualangan berharga
+            dalam membentuk masa depan cerah anak-anak kita!
+          </p>
+          <div class="button" id="pilihan">
+            <a href="#" type="button" class="btn btn-primary rounded-pill" onclick="window.location.href='/parenting1/index.html'">Calon Orang Tua</a>
+            <a href="#" type="button" class="btn btn-primary rounded-pill" onclick="window.location.href='/parenting2/index.html'">Orang Tua</a>
+          </div> 
+        </div>
+      </div>
+    </div>
+   </section>
+<!--Hero Section 3-->
+   <div class="hero-section" id="section3">
+    <div class="container" id="toko">
+      <div class="row mx-lg-auto mt-lg-5" id="hero-content">
+        <div class="col-md-6 order-md-2 d-flex align-items-center ml-auto mb-3 mx-md-auto">
+          <img src="section3.png" alt="Hero Image 3" class="img-fluid" id="hero-img">
+        </div>
+        <div class="col-md-6 order-md-1 m-md-auto">
+          <h1 id="hero-title">
+            Temukan Produk Pilihan Bunda & Sikecil</h1>
+            <p id="hero-desc">
+              Koleksi produk berkualitas untuk kebutuhan bunda & sikecil
+            </p>
+            <button type="button" class="btn btn-primary rounded-pill" id="btnsection3" onclick="window.location.href='/toko/index.html'">Lihat Produk</button>
+        </div>
+      </div>
+    </div>
+   </div>
+<!--artikel Section-->
+    <article-bar>
+      <section class="artikel-section mb-2 bg-body-light rounded">
+        <div class="container mb-5">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1 id="hero-title">Artikel</h1>
+            </div>
+          </div>
+          <div id="carouselIndikator" class="carousel slide mx-auto p-2" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                  <div class="card" id="card-art">
+                    <img src="Artikel1.jpg" alt="Membangun Generasi Emas dengan Smart Parenting untuk Menciptakan Hubungan Harmonis dengan Anak" class="card-img-top">
+                    <div class="card-body m-3">
+                      <a href="https://www.kompasiana.com/triniasefti_/658d16fede948f6bf34bcc62/membangun-generasi-emas-dengan-smart-parenting-untuk-menciptakan-hubungan-harmonis-dengan-anak" class="card-link">
+                        <p class="card-text" id="cardtest-art">Membangun Generasi Emas dengan Smart Parenting untuk Menciptakan Hubungan Harmonis dengan Anak</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card-wrapper">
+                  <div class="card" id="card-art">
+                    <img src="https://www.farah.id/read/2022/05/26/8264/siapkan-mental-saat-si-kesayangan-beranjak-dewasa-ini-tips-agar-tetap-dekat-dengannya" class="card-img-top" alt="Siapkan Mental Saat Si Kesayangan Beranjak Dewasa, Ini Tips Agar Tetap Dekat Dengannya">
+                    <div class="card-body">
+                      <a href="#artikel/2" class="card-link">
+                        <p class="card-text" id="cardtext-art">Siapkan Mental Saat Si Kesayangan Beranjak Dewasa, Ini Tips Agar Tetap Dekat Dengannya</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+                  <div class="card" id="card-art">
+                    <img src="artikel3.jpg" alt="Pengaruh Keluarga dalam Penyucian Hati" class="card-img-top">
+                    <div class="card-body">
+                      <a href="#artikel/3" class="card-link">
+                        <p class="card-text" id="cardtext-art">Pengaruh Keluarga dalam Penyucian Hati</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndikator" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndikator" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </article-bar>
+   </main>
+    <hr id="line">
+<!--footer-->
+  <footer>
+    <foot-bar>
+      <footer class="footer">
+        <div class="row mx-0">
+          <!--Column 1-->
+          <div class="col-md-3 m-md-auto px-0" id="column1">
+            <img src="ParentifyLogo.png" alt="Logo" class="img-fluid mb-2" id="footer-brand">
+            <p>
+              Bersama-sama mengubah 
+              <br>
+              pola asuh yang lebih baik
+            </p>
+          </div>
+          <!--Column 2-->
+          <div class="col-md-3 px-0" id="column2">
+            <h5>Fitur</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#/pilihan" id="parenting" class="link-opacity-25-hover">Parenting</a>
+              </li>
+              <li>
+                <a href="#/edukasi" id="edukasi" class="link-opacity-25-hover">Edukasi</a>
+              </li>
+              <li>
+                <a href="#/toko" id="toko" class="link-opacity-25-hover">Toko</a>
+              </li>
+            </ul>
+          </div>
+          <!--Column 3-->
+          <div class="col-md-3 px-0" id="column3">
+            <h5>Hubungi Kami</h5>
+            <ul class="list-unstyled">
+              <li><a class="link-opacity-25-hover" href="#">parentify12@gmail.com</a></li>
+              <li><a class="link-opacity-25-hover" href="#">Parentify,Indonesia</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="mb-0 mt-4" id="copyright">Copyright 2023 • All rights reserved • Parentify</p>
+      </footer>
+    </foot-bar>
+  </footer>    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Jquery untuk pindah ke section 2-->
+    <script>
+      document.getElementById('btnmain').addEventListener('click', function() {
+        const section2 = document.getElementById('section2');
+
+        if (section2) {
+          section2.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    </script>
+
+  </body>
+</html>

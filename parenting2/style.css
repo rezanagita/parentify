@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+main {
+    margin: 8em 0 2em;
+  }
+
+img#LogoParentify {
+      height: 50px;
+  }
+  
+.bg {
+    background-image: url(https://somen.netlify.app/c0e118ef8d7019b9acbb.png);
+    background-size: 190%;
+    background-repeat: no-repeat;
+    background-color: #f9fbfc;
+    padding-top: 9%;
+    padding-bottom: 5%;
+  }
+
+/* ! Navbar */
+#navbarNav ul {
+    gap: 1rem;
+}
+
+
+/* ! konten */
+.card-title {
+    margin-bottom: .75rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 4.5em;
+  height: 4.5em;
+  border-radius: 4em;
+  background-color: #4b9dd7;
+  top: 12em;
+}
+.carousel-control-prev{
+    left: 3em;
+  }
+  .carousel-control-next {
+    right: 3em;
+  }
+
+.cardortu {
+    width: 100%; /* Menyesuaikan lebar card dengan lebar container */
+    max-width: 300px; /* Lebar maksimum card */
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px; /* Sesuaikan nilai border radius sesuai keinginan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sesuaikan nilai shadow sesuai keinginan */
+    transition: transform 0.3s; /* Efek transisi ketika hover (opsional) */
+}
+.cardortu:hover {
+    transform: scale(1.05); /* Efek zoom in ketika hover (opsional) */
+  }
+  #titleclnortu {
+    text-align: center;
+    margin: 5% auto; /* 10% top and bottom, auto left and right */
+    font-weight: 700;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2em;
+    border: 5px solid #f15b5d;
+    border-radius: 20px;
+    color: #211B3D;
+    padding: 25px;
+    width: 50%;
+    
+}
+
+.card-body {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*  footer */
+.footer {
+    background-color: #f8f9fa;
+    border-radius: 5px;;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  #footer-brand {
+    width: 50%;
+  }
+  
+  #copyright {
+    color: #B1B6B8;
+  }
+
